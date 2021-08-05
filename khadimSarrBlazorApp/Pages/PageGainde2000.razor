@@ -1,0 +1,47 @@
+﻿@page "/gainde2000"
+<h3>Page Gainde</h3>
+
+<br />
+<br />
+
+<button  class="btn btn-primary" @onclick="HandleBlazorServerClick"> Blazor Server</button>
+<button  class="btn btn-success" @onclick="HandleBlazorWebAssemblyClick"> Blazor WebAssemmbly</button>
+
+<br />
+<br />
+
+<h3>  @titre</h3>
+
+<h3>  @contenu</h3>
+
+@code {
+
+    private string titre { get; set; }
+    private string contenu { get; set; }
+
+
+    private void HandleBlazorServerClick()
+    {
+        titre = "Blazor serve ";
+
+        contenu = " Blazor Server contenu genertes dynamique  Blazor Server contenu genertes dynamique  Blazor Server contenu genertes dynamique Blazor Server contenu genertes dynamique";
+
+
+    }
+
+
+    private void HandleBlazorWebAssemblyClick()
+    {
+        titre = "Blazor WebAssembly ";
+
+        contenu = " Blazor WebAssembly runs  complete dynamique Blazor WebAssembly runs  complete dynamique Blazor WebAssembly runs  complete dynamique";
+
+
+    }
+
+
+
+
+
+
+}
