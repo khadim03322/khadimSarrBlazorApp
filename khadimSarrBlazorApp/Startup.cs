@@ -36,9 +36,7 @@ namespace khadimSarrBlazorApp
 
             services.AddTransient<IViewProduct, ViewProduct>();
 
-            
-
-
+          
 
         }
 
